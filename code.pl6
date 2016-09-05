@@ -8,5 +8,5 @@ my $code = q:to/HERE/;
   HERE
 
 
-say $code;
+$code ~~ m/^^\!(\w+)\s*$$/ && say $0;
 
