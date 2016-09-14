@@ -1,5 +1,5 @@
 my @foo = 1, 2, 3;
 
-for @foo -> $i {
-  say $i
+if True {
+  for @foo -> $i { say $i } 
 }
