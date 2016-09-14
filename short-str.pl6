@@ -7,7 +7,8 @@ sub short-string (Str $l) {
 
     $short-l ~~ s/\r//; $orig-l ~~ s/\r//;
 
-    return $short-l < $orig-l ?? "$short-l ..." !! $orig-l;
+    return $short-l le $orig-l ?? "$short-l ..." !! $orig-l;
 
 }
 
+say short-string 'hello world';
