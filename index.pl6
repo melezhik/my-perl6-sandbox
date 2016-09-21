@@ -1,8 +1,12 @@
-my $a = 'world';
-my $b = 'hello world!!!';
+my $a = 'aaaaaaa';
+my $b = 'aaaaaa';
 
-say index($b,$a);
+my $st = index($b,$a);
 
-if index($b,$a) >= 0 {
-  say "OK"
+say $st;
+
+say $st.defined;
+
+if $st.defined  {
+  say "index value: $st"
 }
